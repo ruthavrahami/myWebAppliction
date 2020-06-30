@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<script src='validateFields.js'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href= register.css>
+<style>
+  html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+</style>
+<a class="w3-theme-l5">
+
+  <div class="container w3-center">
+    <form  onsubmit="return validateFields();" class="register" action="loginPage.html" id="form">
+      <div class="row">
+        <h1>צור חשבון</h1>
+        <div class="input-group input-group-icon" id="insertUserName">
+          <input class = "w3-right-align" type="text" placeholder="שם מלא"/>
+          <div class="input-icon"><i class="fa fa-user"></i></div>
+        </div>
+        <div class="input-group input-group-icon" id="insertEmail">
+          <input class = "w3-right-align" type="email" placeholder="אימייל"/>
+          <div class="input-icon"><i class="fa fa-envelope"></i></div>
+        </div>
+        <div class="input-group input-group-icon" id="insertPassword">
+          <input class = "w3-right-align" type="password" placeholder="סיסמא"/>
+          <div class="input-icon"><i class="fa fa-key"></i></div>
+        </div>
+        <div class="input-group input-group-icon" id="insertYM">
+          <input class = "w3-right-align" type="youthMovement" placeholder="תנועת נוער"/>
+          <div class="input-icon"><i class="fa fa-drivers-license"></i></div>
+        </div>
+        <div class="input-group input-group-icon" id="insertPlace">
+          <input class = "w3-right-align" type="place" placeholder="ישוב מגורים"/>
+          <div class="input-icon"><i class="fa fa-map-marker"></i></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-half">
+          <h4>תפקיד</h4>
+          <div class="status">
+            <input type="radio" name="status" value="pupil" id="status-pupil"/>
+            <label for="status-pupil">חניך</label>
+            <input type="radio" name="status" value="lider" id="status-lider"/>
+            <label for="status-lider">מדריך</label>
+          </div>  
+          <button class="w3-button w3-padding-medium w3-light-grey">בחר</button>
+        </div>
+    </form>
+  </div>
+  <button class="w3-button w3-round-xxlarge w3-black" id="registerButton" type="submit">צור חשבון</button>
+  <p class="message">alredy have account? <a id="goToLogin" href="loginPage.html"
+     class="goToLogin w3-bar-item w3-button w3-padding-large w3-theme-d4">login now! :)</a></p>
+</body>
+</html>
